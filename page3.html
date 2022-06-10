@@ -49,7 +49,7 @@
 
 	</div>
 	<script>
-		// 减
+		// -
 		document.querySelector('#sub').addEventListener('click', function () {
 			const inputNum = document.querySelector('#inputNum')
 			const priceSpan = document.querySelector('#price')
@@ -64,7 +64,7 @@
 			}
 		})
 
-		// 加
+		// +
 		document.querySelector('#add').addEventListener('click', function () {
 			const inputNum = document.querySelector('#inputNum')
 			const priceSpan = document.querySelector('#price')
@@ -79,7 +79,7 @@
 			}
 		})
 
-		// 输入框输入数值
+		// Enter the value in the input box
 		document.querySelector('#inputNum').addEventListener('change', function (e) {
 			const val = e.target.value
 			const inputNum = document.querySelector('#inputNum')
@@ -95,7 +95,7 @@
 			}
 		})
 
-		// 按钮跳转
+		// Button to jump
 		function jumpTo(page) {
 			const link = document.createElement('a')
 			link.href = page
