@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/new_file.js"></script>
+</head>
+
+<body>
+	<div id="box">
+		<div class="logo">
+			<a href="#"><img src="img/daoh-1.jpg" class="aa"></a>
+			<a href="#"><img src="img/daoh-2.jpg" class="bb"></a>
+			<a href="#"><img src="img/daoh-3.jpg" class="cc"></a>
+		</div>
+		<div class="ss" onclick="ss()">
+			<!-- <a href="#" ><img src="img/ss.jpg" width="100%"></a>
+				<a href="page1.html"><input type="text" 
+				style="border: none;background-color: #F9F8F6;height: 45px;border-radius: 90px;position: absolute;left: 7%;margin-top: 5px;width: 90%;"
+				></a> -->
+			<input class="search-input" placeholder="搜索" type="text" onkeydown="jumpTo('page1.html')" />
+		</div>
+		<div class="zjian">
+			<a href="#"><img src="img/1.jpg"></a>
+		</div>
+		<div class="shangping">
+			<a href="page2.html"><img src="img/2.jpg"></a>
+			<a href="#"><img src="img/2-1.jpg"></a>
+			<a href="#"><img src="img/2-2.jpg"></a>
+			<a href="#"><img src="img/2-3.jpg"></a>
+			<a href="#"><img src="img/2-4.jpg"></a>
+			<a href="#"><img src="img/2-5.jpg"></a>
+		</div>
+		<div class="yewei">
+			<!-- <img src="img/搜索框.jpg" width="100%" onclick="ss()">
+				<input type="text" class="yewei-1"> -->
+				
+			<div class="index-1">
+				<span>Your email address:</span>
+				<input class="search-input" />
+			</div>
+			<button>Subscribe</button>
+		</div>
+		<div class="sgzm">
+			
+				<!-- <a href="#"><img src="img/dbu1.jpg" alt=""></a>
+				<a href="#"><img src="img/dbu2.jpg" alt=""></a>
+				<a href="#"><img src="img/dbu3.jpg" alt=""></a> -->
+				<div class="cba">
+					<a href="#">About Us</a>
+				<a href="#">Help & Support</a>
+				<a href="#">Our Services</a>
+				</div>
+				
+			
+
+		</div>
+
+
+
+	</div>
+	<script>
+		// 回车键的跳转事件
+		function jumpTo(page) {
+			const event = arguments.callee.caller.arguments[0] || wiindow.event
+			if (event.keyCode === 13) {
+				const link = document.createElement('a')
+				link.href = page
+				link.click()
+			}
+		}
+	</script>
+</body>
+
+</html>
